@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<debiuty_szachowe>
+    <debiut rodzaj="otwarty" popularnosc="wysoka" poziom_trudnosci="sredni">
+        <nazwa jezyk="polski">Partia hiszpanska</nazwa>
+        <nazwa jezyk="hiszpanski">Ruy Lopez</nazwa>
+        <kod_ECO>C60-C99</kod_ECO>
+        <pochodzenie autor="nieznany" rok="1490">manuskrypt z Getyngi</pochodzenie>
+        <ruchy liczba_ruchow="3">
+            <glowna_linia>1.e4 e5 2.Nf3 Nc6 3.Bb5</glowna_linia>
+            <notacja_FEN>r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3</notacja_FEN>
+            <analiza_silnika glebokosc="20">+0.27</analiza_silnika>
+            <warianty>
+                <wariant popularnosc="wysoka" poziom_trudnosci="sredni">
+                    <nazwa>Obrona Morphy'ego</nazwa>
+                    <ruchy>3...a6</ruchy>
+                </wariant>
+                <wariant popularnosc="niska" poziom_trudnosci="sredni">
+                    <nazwa>klasyczny</nazwa>
+                    <ruchy>3...Gc5</ruchy>
+                </wariant>
+                <wariant popularnosc="srednia" poziom_trudnosci="sredni">
+                    <nazwa>obrona berlinska</nazwa>
+                    <ruchy>3...Sf6</ruchy>
+                </wariant>
+            </warianty>
+        </ruchy>
+        <zdjecie src="img/partia_hiszpanska.png" alt="Diagram partii hiszpanskiej"/>
+        <link href="https://pl.wikipedia.org/wiki/Partia_hiszpa%C5%84ska" />
+    </debiut>
+    <debiut rodzaj="polotwarty" popularnosc="niska" poziom_trudnosci="trudny">
+        <nazwa jezyk="polski">Obrona skandynawska</nazwa>
+        <kod_ECO>B01</kod_ECO>
+        <pochodzenie autor="Castellvi-Vinyoles" rok="1475">Walencja</pochodzenie>
+        <ruchy liczba_ruchow="1">
+            <glowna_linia>1.e4 d5</glowna_linia>
+            <notacja_FEN>rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 2</notacja_FEN>
+            <analiza_silnika glebokosc="20">+0.17</analiza_silnika>
+            <warianty>
+                <wariant popularnosc="wysoka" poziom_trudnosci="sredni">
+                    <nazwa>klasyczny</nazwa>
+                    <ruchy>2.exd5 Qxd5</ruchy>
+                </wariant>
+                <wariant popularnosc="niska" poziom_trudnosci="wysoki">
+                    <nazwa>nowoczesny</nazwa>
+                    <ruchy>2.exd5 Nf6</ruchy>
+                </wariant>
+            </warianty>
+        </ruchy>
+        <zdjecie src="img/obrona_skandynawska.png" alt="Diagram obrony skandynawskiej"/>
+        <link href="https://pl.wikipedia.org/wiki/Obrona_skandynawska" />
+    </debiut>
+    <debiut rodzaj="zamkniety" popularnosc="wysoka" poziom_trudnosci="sredni">
+        <nazwa jezyk="polski">Gambit hetmański</nazwa>
+        <kod_ECO>D06-D69</kod_ECO>
+        <pochodzenie autor="Luisa Luceny" rok="1497">Hiszpania</pochodzenie>
+        <ruchy liczba_ruchow="2">
+            <glowna_linia>1.d4 d5 2.c4</glowna_linia>
+            <notacja_FEN>rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq c3 0 2</notacja_FEN>
+            <analiza_silnika glebokosc="45">+0.04</analiza_silnika>
+            <warianty>
+                <wariant popularnosc="wysoka" poziom_trudnosci="sredni">
+                    <nazwa>gambit nieprzyjety</nazwa>
+                    <ruchy>2...e6</ruchy>
+                </wariant>
+                <wariant popularnosc="niska" poziom_trudnosci="wysoki">
+                    <nazwa>gambit przyjety</nazwa>
+                    <ruchy>2...dxc4</ruchy>
+                </wariant>
+                <wariant popularnosc="niska" poziom_trudnosci="wysoki">
+                    <nazwa>obrona slowianska</nazwa>
+                    <ruchy>2...c6</ruchy>
+                </wariant>
+            </warianty>
+        </ruchy>
+        <zdjecie src="img/gambit_hetmanski.png" alt="Diagram gambitu hetmanskiego"/>
+        <link href="https://pl.wikipedia.org/wiki/Gambit_hetma%C5%84ski" />
+    </debiut>
+</debiuty_szachowe>
