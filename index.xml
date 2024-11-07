@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<debiuty_szachowe>
+<?xml version="1.0" encoding="UTF-8"?>
+<debiuty_szachowe  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="debiuty_szachowe.xsd">
     <debiut rodzaj="otwarty" popularnosc="wysoka" poziom_trudnosci="sredni">
         <nazwa jezyk="polski">Partia hiszpanska</nazwa>
         <nazwa jezyk="hiszpanski">Ruy Lopez</nazwa>
@@ -12,20 +13,20 @@
             <warianty>
                 <wariant popularnosc="wysoka" poziom_trudnosci="sredni">
                     <nazwa>Obrona Morphy'ego</nazwa>
-                    <ruchy>3...a6</ruchy>
+                    <glowna_linia>3...a6</glowna_linia>
                 </wariant>
                 <wariant popularnosc="niska" poziom_trudnosci="sredni">
                     <nazwa>klasyczny</nazwa>
-                    <ruchy>3...Gc5</ruchy>
+                    <glowna_linia>3...Gc5</glowna_linia>
                 </wariant>
                 <wariant popularnosc="srednia" poziom_trudnosci="sredni">
                     <nazwa>obrona berlinska</nazwa>
-                    <ruchy>3...Sf6</ruchy>
+                    <glowna_linia>3...Sf6</glowna_linia>
                 </wariant>
             </warianty>
         </ruchy>
-        <zdjecie src="img/partia_hiszpanska.png" alt="Diagram partii hiszpanskiej"/>
-        <link href="https://pl.wikipedia.org/wiki/Partia_hiszpa%C5%84ska" />
+        <zdjecie source="img/partia_hiszpanska.png" alt="Diagram partii hiszpanskiej"/>
+        <link source="https://pl.wikipedia.org/wiki/Partia_hiszpa%C5%84ska" />
     </debiut>
     <debiut rodzaj="polotwarty" popularnosc="niska" poziom_trudnosci="trudny">
         <nazwa jezyk="polski">Obrona skandynawska</nazwa>
@@ -38,16 +39,16 @@
             <warianty>
                 <wariant popularnosc="wysoka" poziom_trudnosci="sredni">
                     <nazwa>klasyczny</nazwa>
-                    <ruchy>2.exd5 Qxd5</ruchy>
+                    <glowna_linia>2.exd5 Qxd5</glowna_linia>
                 </wariant>
                 <wariant popularnosc="niska" poziom_trudnosci="wysoki">
                     <nazwa>nowoczesny</nazwa>
-                    <ruchy>2.exd5 Nf6</ruchy>
+                    <glowna_linia>2.exd5 Nf6</glowna_linia>
                 </wariant>
             </warianty>
         </ruchy>
-        <zdjecie src="img/obrona_skandynawska.png" alt="Diagram obrony skandynawskiej"/>
-        <link href="https://pl.wikipedia.org/wiki/Obrona_skandynawska" />
+        <zdjecie source="img/obrona_skandynawska.png" alt="Diagram obrony skandynawskiej"/>
+        <link source="https://pl.wikipedia.org/wiki/Obrona_skandynawska" />
     </debiut>
     <debiut rodzaj="zamkniety" popularnosc="wysoka" poziom_trudnosci="sredni">
         <nazwa jezyk="polski">Gambit hetmański</nazwa>
@@ -60,19 +61,19 @@
             <warianty>
                 <wariant popularnosc="wysoka" poziom_trudnosci="sredni">
                     <nazwa>gambit nieprzyjety</nazwa>
-                    <ruchy>2...e6</ruchy>
+                    <glowna_linia>2...e6</glowna_linia>
                 </wariant>
                 <wariant popularnosc="niska" poziom_trudnosci="wysoki">
                     <nazwa>gambit przyjety</nazwa>
-                    <ruchy>2...dxc4</ruchy>
+                    <glowna_linia>2...dxc4</glowna_linia>
                 </wariant>
                 <wariant popularnosc="niska" poziom_trudnosci="wysoki">
                     <nazwa>obrona slowianska</nazwa>
-                    <ruchy>2...c6</ruchy>
+                    <glowna_linia>2...c6</glowna_linia>
                 </wariant>
             </warianty>
         </ruchy>
-        <zdjecie src="img/gambit_hetmanski.png" alt="Diagram gambitu hetmanskiego"/>
-        <link href="https://pl.wikipedia.org/wiki/Gambit_hetma%C5%84ski" />
+        <zdjecie source="img/gambit_hetmanski.png" alt="Diagram gambitu hetmanskiego"/>
+        <link source="https://pl.wikipedia.org/wiki/Gambit_hetma%C5%84ski" />
     </debiut>
 </debiuty_szachowe>

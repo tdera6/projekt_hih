@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+    <xs:element name="debiuty_szachowe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="debiut" type="debiutType" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="debiutType">
+        <xs:sequence>
+            <xs:element name="nazwa" type="nazwaType" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            <xs:element name="kod_ECO" type="ECOType"></xs:element>
+            <xs:element name="pochodzenie" type="pochodzenieType"></xs:element>
+            <xs:element name="ruchy" type="ruchyType"></xs:element>
+        </xs:sequence>
+        <xs:attribute ref="rodzaj" use="required"></xs:attribute>
+        <xs:attribute ref="popularnosc" use="optional"></xs:attribute>
+        <xs:attribute ref="poziom_trudnosci" use="optional"></xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="ruchyType">
+        <xs:sequence>
+            <xs:element name="glowna_linia" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="nazwaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="jezyk" type="xs:string" use="required"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="pochodzenieType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="autor" type="xs:string" use="required"></xs:attribute>
+                <xs:attribute name="rok" type="xs:gYear" use="required"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:simpleType name="ECOType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z0-9]{3}-?[A-Z0-9]{0,3}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attribute name="popularnosc">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="wysoka"></xs:enumeration>
+                <xs:enumeration value="srednia"></xs:enumeration>
+                <xs:enumeration value="niska"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="poziom_trudnosci">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="wysoki"></xs:enumeration>
+                <xs:enumeration value="sredni"></xs:enumeration>
+                <xs:enumeration value="niski"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="rodzaj">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="otwarty"></xs:enumeration>
+                <xs:enumeration value="polotwarty"></xs:enumeration>
+                <xs:enumeration value="zamkniety"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+</xs:schema>
